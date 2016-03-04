@@ -34,6 +34,7 @@
                     <th>IGV</th>
                     <th>SEXO</th>
                     <th>ACTIVO</th>
+                    <th>ACCIONES</th>
                 </tr>
                 <?php
                 $query2 = "SELECT * FROM productos WHERE categoria_id=" . $line['id'];
