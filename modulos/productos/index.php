@@ -6,7 +6,7 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Productos</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
@@ -48,7 +48,8 @@ and open the template in the editor.
                     <td><?php echo ($producto["is_igv"] ==0) ? "Inactivo": "Activo" ?></td>
                     <td><?php echo ($producto["sexo"]=='M') ? "Masculino": "Femenino" ?></td>
                     <td><?php echo ($producto["activo"]==0) ? "Inactivo" : "Activo" ?></td>
-                    <td><a style="margin: 5px" href="form.php">Editar</a><a href="eliminar_producto.php">Eliminar</a></td>
+                    <td><a style="margin: 5px" href="form.php?id=<?php echo $producto['producto_id'] ?>&action=Editar" >Editar</a>
+                        <a href="eliminar_producto.php">Eliminar</a></td>
                 </tr>
             <?php } ?>
         </table>
